@@ -3,13 +3,13 @@ tasks = []
 
 def add_task(task):
     tasks.append(task)
-    print("task added!")
+    print("Task added!")
     print("\n")
 
-
+# Causes confusion in indexing
 def show_tasks():
     if len(tasks) == 0:
-        print("no tasks yet")
+        print("No tasks yet")
     else:
         print("List of Tasks")
         for i in range(len(tasks)):
@@ -20,8 +20,7 @@ def show_tasks():
 
 def remove_task(task_number):
     tasks.pop(task_number)
-    print("task removed!!")
-
+    print("Task removed!!")
 
 
 
